@@ -3,7 +3,9 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cardioCount, setCardioCount] = useState(0)
+  const [weightCount, setWeightCount] = useState(0)
+  const [strengthCount, setStrengthCount] = useState(0)
 
   return (
     <div>
@@ -15,13 +17,13 @@ function App() {
           <div className="counter-box">
             <button
               className="counter"
-              onClick={() => setCount((count) => count + 1)}
+              onClick={() => setCardioCount((count) => count + 1)}
             >+
             </button>
-            <p className="count-value">{count}</p>
+            <p className="count-value">{cardioCount}</p>
             <button
               className="counter"
-              onClick={() => setCount((count) => count - 1)}
+              onClick={() => setCardioCount((count) => count - 1)}
             >-
             </button>
           </div>
@@ -32,30 +34,30 @@ function App() {
           <div className="counter-box">
             <button
               className="counter"
-              onClick={() => setCount((count) => count + 1)}
+              onClick={() => setWeightCount((count) => count + 1)}
             >+
             </button>
-            <p className="count-value">{count}</p>
+            <p className="count-value">{weightCount}</p>
             <button
               className="counter"
-              onClick={() => setCount((count) => count - 1)}
+              onClick={() => setWeightCount((count) => count - 1)}
             >-
             </button>
           </div>
 
           <br /><br />
 
-          <h2>Classes of Water</h2>
+          <h2>Strength Workouts</h2>
           <div className="counter-box">
             <button
               className="counter"
-              onClick={() => setCount((count) => count + 1)}
+              onClick={() => setStrengthCount((count) => count + 1)}
             >+
             </button>
-            <p className="count-value">{count}</p>
+            <p className="count-value">{strengthCount}</p>
             <button
               className="counter"
-              onClick={() => setCount((count) => count - 1)}
+              onClick={() => setStrengthCount((count) => count - 1)}
             >-
             </button>
           </div>
