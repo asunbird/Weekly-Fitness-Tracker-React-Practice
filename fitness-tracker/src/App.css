@@ -15,6 +15,10 @@
     display: block;
   }
 
+  .title {
+    display: block;
+  }
+
   @media (max-width: 1024px) {
     margin-top: 20px;
     flex-wrap: wrap;
@@ -27,17 +31,55 @@
   height: 400px;
   width: 20%;
   min-width: 180px;
-  margin: 2% auto;
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   
   background: var(--accent-bg);
   border: 1px solid var(--accent-border);
   border-radius: 12px;
   box-shadow: var(--shadow);
 
+  .counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .counter {
+      width: 40px;
+      height: 40px;
+      display: block;
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      border-radius: 4px;
+
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .count-value {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-align: center;
+      line-height: 20px;
+      padding: 3px;
+      background: var(--accent-bg);
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--w-text);
+    }
+
+
+  }
 
   @media (max-width: 1024px) {
     margin-top: 20px;

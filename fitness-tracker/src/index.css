@@ -29,6 +29,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --w-text: #ffffff;
     --text: #9925fd;
     --text-h: #df9efc;
     --bg: #16171d;
