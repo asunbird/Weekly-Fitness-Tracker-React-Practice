@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -9,8 +7,11 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Weekly Fitness App</h1>
-      <section id="hero"></section>
+      <section id="hero">
+        <img className="icon" src={reactLogo} alt="React logo" />
+        <h1 className="title">Weekly Fitness App</h1>
+        <div className="app-container"></div>
+      </section>
     </div>
   )
 }
